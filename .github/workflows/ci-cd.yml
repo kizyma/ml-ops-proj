@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 
 on:
   pull_request:
-    branches: [ main ]  # Specify the branch where the PRs are made
+    branches: [ master ]  # Specify the branch where the PRs are made
 
 jobs:
   build-and-push-image:
