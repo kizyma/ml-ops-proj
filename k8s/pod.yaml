@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pythia-nlp-pod
+  labels:
+    purpose: demonstrate-pythia-nlp
+spec:
+  containers:
+  - name: pythia-nlp
+    image: ghcr.io/kizyma/pythia_nlp:latest
+    ports:
+    - containerPort: 8000

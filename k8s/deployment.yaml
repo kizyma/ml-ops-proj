@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pythia-nlp-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pythia-nlp
+  template:
+    metadata:
+      labels:
+        app: pythia-nlp
+    spec:
+      containers:
+      - name: pythia-nlp
+        image: ghcr.io/kizyma/pythia_nlp:latest # Replace with your actual image
+        ports:
+        - containerPort: 8000
+        command: ["uvicorn"]
+        args: ["main:app", "--host", "0.0.0.0", "--port", "8000"]
