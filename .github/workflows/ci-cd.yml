@@ -1,5 +1,7 @@
 name: CI/CD Pipeline
 
+permissions: write-all
+
 on:
   pull_request:
     branches: [ master ]
