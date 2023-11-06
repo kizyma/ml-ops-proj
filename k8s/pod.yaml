@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: pythia-nlp
-    image: ghcr.io/kizyma/pythia_nlp:latest
+    image: ghcr.io/kizyma/ml-ops-proj:latest 
     ports:
     - containerPort: 8000

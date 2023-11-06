@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [ master ]
   push:
-    branches: [ master ]  # Trigger on push to master as well
+    branches: [ master ]  # Trigger on push to master as well, to make it quicker for now.
 
 jobs:
   build-and-push-image:

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pythia-nlp
-        image: ghcr.io/kizyma/pythia_nlp:latest # Replace with your actual image
+        image: ghcr.io/kizyma/ml-ops-proj:latest 
         ports:
         - containerPort: 8000
         command: ["uvicorn"]
