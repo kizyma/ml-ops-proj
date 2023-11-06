@@ -2,7 +2,9 @@ name: CI/CD Pipeline
 
 on:
   pull_request:
-    branches: [ master ]  # Specify the branch where the PRs are made
+    branches: [ master ]
+  push:
+    branches: [ master ]  # Trigger on push to master as well
 
 jobs:
   build-and-push-image:
@@ -10,32 +12,30 @@ jobs:
 
     steps:
     - name: Check Out Repo
-      uses: actions/checkout@v2  # Checkout the repository content
+      uses: actions/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'  # Set the Python version to match the Dockerfile
+        python-version: '3.9'
 
-    - name: Build Docker image
+    - name: Build and tag Docker image
       run: |
-        docker build -t ghcr.io/${{ github.repository }}/pythia_nlp:${{ github.sha }} .
-
-    # - name: Test Docker image
-    #   run: |
-    #     docker run --rm -d -p 8000:8000 ghcr.io/${{ github.repository }}/pythia_nlp:${{ github.sha }}
-    #     sleep 10  # Wait for the server to start
-    #     curl --fail http://localhost:8000/  # Replace this with an actual health-check endpoint if available
+        docker build -t ghcr.io/kizyma/ml-ops-proj:${{ github.sha }} .
+        docker tag ghcr.io/kizyma/ml-ops-proj:${{ github.sha }} ghcr.io/kizyma/ml-ops-proj:latest
 
     - name: Log in to GitHub Container Registry
-      if: github.event_name == 'pull_request' && github.event.action != 'closed'
       uses: docker/login-action@v1
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Push Docker image
-      if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    - name: Push Docker image with SHA tag
       run: |
-        docker push ghcr.io/${{ github.repository }}/pythia_nlp:${{ github.sha }}
+        docker push ghcr.io/kizyma/ml-ops-proj:${{ github.sha }}
+
+    - name: Push Docker image with latest tag
+      if: github.ref == 'refs/heads/master'
+      run: |
+        docker push ghcr.io/kizyma/ml-ops-proj:latest
