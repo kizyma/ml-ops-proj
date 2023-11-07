@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: minio-service
+spec:
+  type: NodePort
+  ports:
+  - port: 9000
+    targetPort: 9000
+    protocol: TCP
+    name: minio
+  selector:
+    app: minio
