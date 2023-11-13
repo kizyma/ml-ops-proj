@@ -83,4 +83,7 @@ kubectl port-forward svc/minio-service 9000:9000
 ```
 
 Run test suite with following command:
+
+```bash
 python -m unittest minio_client.unittests.test_minio_crud_client
+```
