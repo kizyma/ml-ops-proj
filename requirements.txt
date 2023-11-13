@@ -2,3 +2,5 @@ fastapi==0.104.1
 uvicorn[standard]==0.17.6
 minio
 dvc
+# in case you will use gdrive as main storage driver
+# dvc-gdrive
