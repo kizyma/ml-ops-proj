@@ -154,3 +154,27 @@ To download data on a different machine:
   ```bash
   dvc pull
   ```
+
+# Setting Up and Using Label Studio for Data Labeling
+
+Label Studio is an open-source data labeling tool. This section provides instructions on deploying Label Studio and labeling around 50 data samples.
+
+## Prerequisites
+
+- Python 3.6 or higher
+- pip for installing Python packages
+
+## Installation
+
+**Install Label Studio:**
+   Label Studio can be installed using pip. Run the following command:
+   ```bash
+   pip install label-studio
+   ```
+## Deployment
+**Start Label Studio:**
+  Once installed, start Label Studio using the command line:
+
+   ```bash
+   label-studio start
+   ```
