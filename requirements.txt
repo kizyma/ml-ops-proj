@@ -4,3 +4,4 @@ minio
 dvc
 # in case you will use gdrive as main storage driver
 # dvc-gdrive
+label-studio
