@@ -1,0 +1,208 @@
+{
+    "os": "Linux-6.5.0-10-generic-x86_64-with-glibc2.38",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-11-16T15:53:26.805669",
+    "startedAt": "2023-11-16T15:53:26.214972",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/krabli/Desktop/ml-ops/ml-ops-proj/experiments/models/toxicity_classifier/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "experiments/models/toxicity_classifier/train.py",
+    "git": {
+        "remote": "git@github.com:kizyma/ml-ops-proj.git",
+        "commit": "fffef91352fbe377b232a813e468225041352206"
+    },
+    "email": null,
+    "root": "/home/krabli/Desktop/ml-ops/ml-ops-proj",
+    "host": "krabli-System-Product-Name",
+    "username": "krabli",
+    "executable": "/home/krabli/mambaforge/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2139.9224375,
+        "min": 400.0,
+        "max": 5881.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3341.455,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3288.605,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3397.831,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4938.206,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3163.852,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4449.654,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4599.562,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3784.351,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4526.35,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4943.831,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4936.281,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3290.376,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3308.716,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4940.656,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3772.75,
+            "min": 400.0,
+            "max": 5881.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 147.50135803222656,
+            "used": 84.08223342895508
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 30.479122161865234
+    }
+}
