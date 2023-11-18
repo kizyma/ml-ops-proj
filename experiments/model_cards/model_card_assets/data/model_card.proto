@@ -1,0 +1,13 @@
+
+ª
+Toxicity Classification Model½This model predicts the toxicity level in text data, useful for moderating online content.
+
+Evaluation data and results can be found on the W&B platform: [Training Project](https://wandb.ai/kizimayarik01/toxic_text_classification), [Param Search Project](https://wandb.ai/kizimayarik01/toxicity_classification_sweep)."
+Project Pythia Team*2
+$fc9076a0-6743-46bc-b9e3-26f900dccfbf
+2023-11-18"ö
+¢
+ŸThe intended users are individuals and organizations who will use the Pythia API for content moderation and toxicity detection in various text-based platforms.a
+_The model is designed for identifying and moderating toxic content in multi-language text data.y
+wThe model might show biases based on the training data and may not generalize well across all types of textual content.*q
+&Potential biases in toxicity detectionGRegularly evaluate the model for fairness across different demographics

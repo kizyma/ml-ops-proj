@@ -21,7 +21,6 @@ from transformers import AutoTokenizer, XLMRobertaTokenizer
 from tensorflow.keras.regularizers import l2
 
 
-
 class WandBCallback(Callback):
     def on_epoch_end(self, epoch, logs=None):
         if logs is not None:

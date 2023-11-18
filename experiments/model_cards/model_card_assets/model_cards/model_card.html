@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+<style>
+  h1 {text-align: center;}
+  .row {
+    display: flex;
+  }
+  .col {
+    flex: 1;
+  }
+  .card {
+    padding: 1em;
+    border: 1px solid #DADCE0;
+    margin: 10px;
+  }
+  .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .img-item {
+    flex: 1;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table {
+    margin-bottom: 10px;
+  }
+  table th {
+    background: #eee;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    height: 30px;
+    text-align: left;
+    padding: 5px 10px
+  }
+  caption { font-weight: bold; }
+</style>
+<title>
+  Model Card for Toxicity Classification Model
+</title>
+</head>
+<body>
+  <h1>
+    Model Card for Toxicity Classification Model
+  </h1>
+    <div class="row">
+    
+      <div class="col card">
+        <h2>Model Details</h2>
+          <h3>Overview</h3>
+              This model predicts the toxicity level in text data, useful for moderating online content.
+
+Evaluation data and results can be found on the W&amp;B platform: [Training Project](https://wandb.ai/kizimayarik01/toxic_text_classification), [Param Search Project](https://wandb.ai/kizimayarik01/toxicity_classification_sweep).
+          <h3>Version</h3>
+              
+  
+    <div>name: fc9076a0-6743-46bc-b9e3-26f900dccfbf</div>
+
+              
+  
+    <div>date: 2023-11-18</div>
+
+              
+  
+
+          
+          
+          <h3>Owners</h3>
+            
+              Project Pythia Team, None
+            
+          
+          
+          
+          
+        </div>
+      
+      
+      
+      <div class="col card">
+        <h2>Considerations</h2>
+          
+            <h3>Intended Users</h3>
+              
+  
+  <ul>
+  
+    <li>The intended users are individuals and organizations who will use the Pythia API for content moderation and toxicity detection in various text-based platforms.</li>
+  
+  </ul>
+
+          
+          
+            <h3>Use Cases</h3>
+              
+  
+  <ul>
+  
+    <li>The model is designed for identifying and moderating toxic content in multi-language text data.</li>
+  
+  </ul>
+
+          
+          
+            <h3>Limitations</h3>
+              
+  
+  <ul>
+  
+    <li>The model might show biases based on the training data and may not generalize well across all types of textual content.</li>
+  
+  </ul>
+
+          
+          
+          
+            <h3>Ethical Considerations</h3>
+              <ul>
+                <li>
+                  <div>Risk: Potential biases in toxicity detection</div>
+                  <div>Mitigation Strategy: Regularly evaluate the model for fairness across different demographics</div>
+                </li> </ul>
+      </div>
+      
+    </div>
+    
+    
+</body>
+</html>
