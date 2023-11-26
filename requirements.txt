@@ -2,7 +2,21 @@ fastapi==0.104.1
 uvicorn[standard]==0.17.6
 minio
 psycopg2-binary
+# data and model versioning and labeling
 dvc
 # in case you will use gdrive as main storage driver
-# dvc-gdrive
-label-studio
+dvc-gdrive
+# dataset labeling
+# TODO - move to a separate docker image with separate requirements
+# label-studio
+# model training
+tensorflow_addons
+transformers
+numpy
+scikit-learn
+wandb
+matplotlib
+sentencepiece
+# model card generation
+model-card-toolkit
+tfx-addons[model_card_generator]
