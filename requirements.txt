@@ -1,22 +1,25 @@
 fastapi==0.104.1
 uvicorn[standard]==0.17.6
-minio
-psycopg2-binary
+# TODO - move to a separate docker image with separate requirements
+# data storage
+# minio
+# psycopg2-binary
 # data and model versioning and labeling
-dvc
+# dvc
 # in case you will use gdrive as main storage driver
-dvc-gdrive
+# dvc-gdrive
 # dataset labeling
 # TODO - move to a separate docker image with separate requirements
 # label-studio
+# TODO - move to a separate docker image with separate requirements
 # model training
-tensorflow_addons
-transformers
-numpy
-scikit-learn
-wandb
-matplotlib
-sentencepiece
+# tensorflow_addons
+# transformers
+# numpy
+# scikit-learn
+# wandb
+# matplotlib
+# sentencepiece
 # model card generation
-model-card-toolkit
-tfx-addons[model_card_generator]
+# model-card-toolkit
+# tfx-addons[model_card_generator]
