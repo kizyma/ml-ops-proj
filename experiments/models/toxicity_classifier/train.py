@@ -6,7 +6,7 @@ import tensorflow as tf
 import tensorflow_addons as tfa
 import wandb
 from transformers import AutoTokenizer, XLMRobertaConfig
-from utils import (
+from experiments.models.toxicity_classifier.utils import (
     load_train_set,
     load_test_set,
     build_dataset,
