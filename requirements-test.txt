@@ -1,0 +1,11 @@
+pytest
+pytest-mock
+tensorflow  # Specify the version you're using if necessary
+tensorflow_addons
+transformers
+numpy
+scikit-learn
+matplotlib  # Include only if you are testing plot functionalities
+wandb
+sentencepiece
+pandas
